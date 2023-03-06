@@ -31,7 +31,12 @@ const thoughtSchema = new Schema (
 
       // Created a virtual called friendCount that retrieves the length of the user's friends array field on query //
 
-  thoughtSchema.virtual("friendCount").get(function () {
-    return this.friends.length;
-  });
+      thoughtSchema.virtual("friendCount").get(function () {
+        return this.friends.length;
+      });
+      const Thought = model('Thought', thoughtSchema);
+    
+      module.exports = Thought;  
+  
+
   
