@@ -13,7 +13,7 @@ const {
 // get users and create 
 
 router.route("/")
-.get(geAllUsers)
+.get(getAllUsers)
 .post(createUser);
 
 // get, delete and update by using its id //
