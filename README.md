@@ -6,7 +6,7 @@
 - [Technologies](#technologies)
 - [Installation and Usage](#installation-and-usage)
 - [Screenshot](#screenshot)
-- [Video Demonstartion](#video-demonstration)
+- [Video Demonstration](#video-demonstration)
 
 ## Description
 
