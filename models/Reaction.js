@@ -29,4 +29,8 @@ const reactionSchema = new Schema(
     }
   );
 
+  function formatDate(date) {
+    return moment(date).format("DD/MM/YY HH:mm");
+  }
+
 module.exports = reactionSchema;
