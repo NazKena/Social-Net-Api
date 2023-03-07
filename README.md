@@ -27,6 +27,9 @@ When command `npm start` is run, then the server will start and the Mongoose mod
 
 ## Screenshot
 
+
+![Image](./Images/Screenshot%202023-03-07%20at%2015.19.55.png)
+
 ## Video Demonstration
 
-Here is the video link ()
+Here is the video link: [Video](https://drive.google.com/file/d/1U8iaWGlfHNM3vwwLpTQIsV9irylf9ran/view?usp=sharing)
