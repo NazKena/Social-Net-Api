@@ -1,13 +1,12 @@
 const { User, Thought } = require("../models");
 
 const thoughtController = {
-   getThoughts(req, res)   {
-
-    console.log("getting thoughts")
+  getThoughts(req, res) {
+    console.log("getting thoughts");
     Thought.find()
       .sort({ createdAt: -1 })
       .then((dbThoughtData) => {
-        console.log("thoughts found",dbThoughtData)
+        console.log("thoughts found", dbThoughtData);
         res.json(dbThoughtData);
       })
       .catch((err) => {
@@ -62,12 +61,12 @@ const thoughtController = {
         res.status(500).json({ message: "Failed to update thought!", err });
       });
   },
+
   deleteThought(req, res) {
     Thought.findOneAndDelete({ _id: req.params.thoughtId })
       .then(() => res.json({ message: "thought has been deleted!" }))
       .catch((err) => res.status(500).json(err));
   },
-
 
   createReaction(req, res) {
     Thought.findOneAndUpdate(
